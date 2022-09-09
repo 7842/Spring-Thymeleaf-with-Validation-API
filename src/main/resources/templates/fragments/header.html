@@ -43,6 +43,13 @@
                 </li>
             </ul>
         </div>
+        <div sec:authorize="isAnonymous()" class="ml-4">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="btn btn-primary" th:href="@{/signup}">Sign Up</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
